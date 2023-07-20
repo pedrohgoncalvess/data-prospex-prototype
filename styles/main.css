@@ -177,7 +177,7 @@ li {
 .services-container {
     display: flex;
     flex-flow: column wrap;
-    margin-top: 10%;
+    margin-top: 7%;
 }
 
 .conf-image {
@@ -225,7 +225,7 @@ li {
 
 .title-other-services {
     justify-content: space-around;
-    margin-left: 10%;
+    margin: 3% 0 0 10%;
     color: #f6f6f6;
     font-size: 20px;
 }
@@ -327,9 +327,24 @@ li {
 .data-prospex {
     display: flex;
     justify-content: center;
-    align-items: center;
     margin: 2% auto;
-    width: 80%;
+    color: white;
+    width: 50%;
+}
+
+.work-method {
+    margin: 7% 0 0 0;
+    text-align: left;
+    font-size: 90%;
+}
+
+.informative-text p{
+    font-size: 19px;
+}
+
+.informative-text h2,h3 {
+    text-align: center;
+    margin:5% 0 0 0;
 }
 
 
