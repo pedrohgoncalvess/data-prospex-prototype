@@ -1,0 +1,349 @@
+:root {
+    --font_secondary: #039dd3;
+    --font_third: #02aae8;
+    --white: #ffffff;
+}
+
+/*BODY*/
+
+body {
+    position: relative;
+    padding: 0;
+    margin: 0;
+    font-family: "Poppins";
+}
+
+body::before {
+    content: "";
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-image: url("images/background/background.jpg");
+    background-position: center;
+    z-index: -1;
+}
+
+body::after {
+    content: "";
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(4, 5, 12, 0.35);
+    backdrop-filter: blur(7px);
+    z-index: -1;
+}
+
+/*NAVBAR*/
+
+li {
+    list-style-type: none;
+}
+
+.navigation-list a:hover {
+    color: var(--font_secondary);
+}
+
+.navigation-bar {
+    display: flex;
+    justify-content: center;
+    white-space: nowrap;
+    background-color: rgb(0, 56, 63, 0.3);
+    backdrop-filter: blur(7px);
+}
+
+.navigation-list a {
+    text-decoration: none;
+    font-size: 20px;
+    color: white;
+    font-family: "JetBrains Mono", monospace;
+}
+
+.navigation-list {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 5%;
+    color: white;
+    margin-right: 10%;
+}
+
+.logo-container {
+    margin-left: auto;
+}
+
+.logo {
+    width: 50%;
+}
+
+/*FIRST MESSAGE*/
+
+.enter-messages b {
+    color: var(--font_secondary);
+}
+
+
+.enter-messages {
+    padding-top: 8%;
+    display: flex;
+    flex-direction: column;
+    max-width: 70%;
+    margin: auto;
+    color: white;
+    font-size: 25px;
+}
+
+/*BUTTONS*/
+
+.buttons-redirect {
+    display: flex;
+    font-size: 85%;
+    align-items: center;
+    gap: 10%;
+
+}
+
+.blog-button {
+    background-color: transparent;
+    color: white;
+    border: none;
+
+}
+
+.blog-button:hover {
+    color: var(--font_third);
+}
+
+
+.contact-button {
+    display: flex;
+    color: #fdfffe;
+    background-color: var(--font_secondary);
+    padding: 10px 16px;
+    border-radius: 20px;
+    transition: all .3s ease;
+    font-weight: bold;
+    cursor: pointer;
+    align-items: center;
+    font-size: 14px;
+}
+
+.contact-button > .arrow {
+    width: 6px;
+    height: 6px;
+    border-right: 2px solid #f8f8f8;
+    border-bottom: 2px solid #ffffff;
+    position: relative;
+    transform: rotate(-45deg);
+    margin: 0 6px;
+    transition: all .3s ease;
+}
+
+.contact-button > .arrow::before {
+    display: block;
+    background-color: currentColor;
+    width: 3px;
+    transform-origin: bottom right;
+    height: 2px;
+    position: absolute;
+    opacity: 0;
+    bottom: calc(-2px / 2);
+    transform: rotate(45deg);
+    transition: all .3s ease;
+    content: "";
+    right: 0;
+}
+
+.contact-button:hover > .arrow {
+    transform: rotate(-45deg) translate(4px, 4px);
+    border-color: text-hover-color;
+}
+
+.contact-button:hover > .arrow::before {
+    opacity: 1;
+    width: 8px;
+}
+
+.contact-button:hover {
+    background-color: #009887;
+}
+
+
+/*MAIN DIV*/
+
+.services-container {
+    display: flex;
+    flex-flow: column wrap;
+    margin-top: 10%;
+}
+
+.conf-image {
+    width: 30%;
+    padding-top: 3%;
+}
+
+.services-container h2 {
+    font-size: 15px;
+}
+
+.title-services {
+    justify-content: space-around;
+    margin-left: 10%;
+    color: #f6f6f6;
+    font-size: 20px;
+}
+
+.information-services {
+    display: flex;
+    flex-flow: row wrap;
+    margin: 5%;
+    gap: 2%;
+}
+
+.information-services div {
+    flex:1;
+    text-align: center;
+    align-items: center;
+    background-color: #c9c8c8;
+    opacity: 0.6;
+    border-radius: 10px;
+}
+
+.information-services div:hover {
+    opacity: 1;
+    transform: scale(1.1);
+    transition: 0.8s;
+}
+
+.sub-title-services  {
+    padding-top: 8%;
+    padding-bottom: 6%;
+}
+
+.title-other-services {
+    justify-content: space-around;
+    margin-left: 10%;
+    color: #f6f6f6;
+    font-size: 20px;
+}
+
+.information-other-services {
+    display: flex;
+    margin: 5%;
+    gap: 2%;
+}
+
+.information-other-services div {
+    flex:1;
+    text-align: center;
+    align-items: center;
+    background-color: #e0e0e0;
+    opacity: 0.6;
+    border-radius: 10px;
+}
+
+.information-other-services div:hover {
+    opacity: 1;
+    transform: scale(1.1);
+    transition: 0.8s;
+}
+
+
+
+/*TEXTOS INFORMATIVOS*/
+
+
+.data-information {
+    display: flex;
+    flex-direction: column;
+}
+
+.informative-text {
+    display: flex;
+    flex-direction: column;
+    color: white;
+}
+
+.informative-text b {
+    color: var(--font_secondary);
+}
+
+
+
+/*data forrester*/
+
+.data-forrester {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 3% auto;
+    width: 80%;
+}
+
+.data-forrester i {
+    color: var(--font_third);
+}
+
+.data-forrester a {
+    text-decoration: none;
+    color: grey;
+    font-size: 80%;
+}
+
+.data-forrester a:hover {
+    color: var(--font_third);
+}
+
+
+/*cultura data driven*/
+
+.data-driven {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 3% auto;
+    width: 80%;
+}
+
+.data-driven p {
+    font-size: 18px;
+}
+
+.image-container {
+    margin-left: 5%;
+    margin-right: 5%;
+}
+
+.informative-image {
+    width: 300px;
+}
+
+/*como a prospex pode ajudar*/
+
+.data-prospex {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 2% auto;
+    width: 80%;
+}
+
+
+
+
+
+/*MOBILE CONFIGS*/
+
+@media(max-width: 834px) {
+    .enter-messages {
+        font-size: 18px;
+    }
+
+    .logo {
+        display: flex;
+        width: 100%;
+    }
+}
