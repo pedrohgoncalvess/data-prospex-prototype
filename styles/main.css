@@ -1,7 +1,7 @@
 :root {
     --font_secondary: #039dd3;
-    --font_third: #02aae8;
-    --white: #ffffff;
+    --font_third: #4fceff;
+    --italic-font: #c4c4c4;
 }
 
 /*BODY*/
@@ -284,7 +284,8 @@ li {
 }
 
 .data-forrester i {
-    color: var(--font_third);
+    font-family: "JetBrains Mono", sans-serif;
+    color: var(--italic-font);
 }
 
 .data-forrester a {
